@@ -7,13 +7,13 @@ interface CardProps {
     type: string
 }
 
-export function Card(props : CardProps){
+export function Card({price, image, title, type} : CardProps){
     return(
         <div className="card">
             <img/>
-            <h2></h2>
-            <p><b>Valor:</b></p>
-            <h2></h2>
+            <h2>{title}</h2>
+            <p><b>Valor:</b>{price}</p>
+            <h3>{type}</h3>
         </div>
     )
 }
